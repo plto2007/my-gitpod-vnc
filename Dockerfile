@@ -7,7 +7,7 @@ RUN add-apt-repository ppa:saiarcot895/chromium-beta && apt-get update
 
 # Install dependencies
 RUN apt-get update                                             \
-    && apt-get install -y libgtk-3-dev firefox chromium-beta              \
+    && apt-get install -y libgtk-3-dev firefox chromium-browser              \
     && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
 
 
